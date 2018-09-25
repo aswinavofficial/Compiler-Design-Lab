@@ -1,0 +1,20 @@
+void	<void>	Keyword
+main	<main>	Keyword
+(	<(>	Seperator
+)	<)>	Seperator
+{	<{>	Seperator
+int	<int>	Keyword
+a	<a>	Identifier
+=	<=>	Operator
+10	<10>	Number
+;	<;>	Seperator
+int	<int>	Keyword
+b	<b>	Identifier
+=	<=>	Operator
+a	<a>	Identifier
++	<+>	Operator
+20	<20>	Number
+;	<;>	Seperator
+}	<}>	Seperator
+
+("_")*{letter}("_"|{letter}|{digit})*\(.*\)		            {printf("\n%s\tFunction",yytext);}
